@@ -2,7 +2,7 @@ var searchButton=document.getElementById("searchButton");
 var searchBar=document.getElementById("searchBar");
 searchButton.addEventListener("click",function(){
 		var searchValue=searchBar.value;
-		var dataWebsite="http://api.apixu.com/v1/current.json?key=27f4205113ea4b4ca94103008172503&q="+searchValue;
+		var dataWebsite="https://api.apixu.com/v1/current.json?key=27f4205113ea4b4ca94103008172503&q="+searchValue;
 		var request = new XMLHttpRequest();
 		request.open('GET' , dataWebsite);
 		request.send();
